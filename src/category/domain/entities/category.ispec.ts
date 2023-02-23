@@ -1,12 +1,13 @@
+// integration tests
+
+
 import { Category } from "./category";
 
 describe("Category Unit Tests", () => {
 
   test('constructor of category', () => {
-    const category = new Category({
-      name: 'Movie'
-    })
+    const category = new Category('Movie')
 
-    expect(category.props.name).toBe('Movie')
+    expect(category.name).toBe('Movie')
   })
 });
